@@ -30,37 +30,46 @@
 
   <h2>Information We Collect</h2>
   <ul>
-    <li><strong>Account information:</strong> if you sign in, we store your name, email address, and profile photo (if provided) via Firebase Authentication.</li>
-    <li><strong>Learning progress:</strong> which words you have marked known, your flashcard review history, reading position, bookmarks, and daily learning statistics — stored on your device and, if signed in, synced to our cloud database (Firebase Firestore).</li>
-    <li><strong>Crash and diagnostic data:</strong> technical details sent to Firebase Crashlytics to help us fix bugs.</li>
+    <li><strong>Account information:</strong> if you sign in, we store your name, email address, and profile photo (if provided by your sign-in method) via Firebase Authentication.</li>
+    <li><strong>Learning progress:</strong> which words you have marked known, your flashcard review history, reading position, bookmarks, favourite surahs, and daily learning statistics — stored on your device and, if signed in, synced to our cloud database (Firebase Firestore).</li>
+    <li><strong>Profile settings:</strong> if you sign in, settings such as your display name, gender (if you choose to set it) and daily word goal may be stored in your cloud profile.</li>
+    <li><strong>Community profile (optional):</strong> if you set up the leaderboard, your display name, avatar emoji, country, city, points, known-word count and streak are stored in Firebase Firestore and are visible to other signed-in users of the App, according to the visibility options you choose. Friend connections, friend requests and group memberships are also stored. You can remove all of this by deleting your account.</li>
+    <li><strong>Crash and diagnostic data:</strong> technical details (such as device model, operating system version, app version, sync status and error information) are sent to Firebase Crashlytics, and a diagnostic snapshot is stored in your cloud profile if you are signed in, to help us fix bugs. Crash reports may be tagged with your account ID.</li>
     <li><strong>Usage analytics:</strong> anonymous, aggregated information about which screens/features are used, via Firebase Analytics.</li>
+    <li><strong>Feedback:</strong> if you send feedback from the App, it opens your email app with a message that includes your app version and device model. The email is sent by you from your own email account.</li>
   </ul>
 
   <h2>Information We Do NOT Collect</h2>
   <ul>
     <li>We do not sell your personal data to third parties for advertising.</li>
-    <li>We do not access your contacts, photos, or files beyond what you explicitly upload as a profile picture.</li>
+    <li>We do not access your contacts or files.</li>
+    <li>We do not collect or store your payment details. Donations are made outside the App (see "Donations" below).</li>
   </ul>
 
   <h2>How Your Information Is Used</h2>
-  <p>Your learning data is used solely to provide the App's core features: tracking vocabulary progress, showing your reading position, scheduling review reminders, and syncing progress across devices you sign into.</p>
+  <p>Your data is used solely to provide the App's core features: tracking vocabulary progress, showing your reading position, scheduling review reminders, syncing progress across devices you sign into, and (if you opt in) showing the leaderboard, friends and groups.</p>
 
   <h2>Data Storage &amp; Security</h2>
-  <p>Most data is stored locally on your device. If you sign in, a copy is also stored in Firebase Firestore, protected by Google's standard security infrastructure and access rules restricting your data to your own account.</p>
+  <p>Most data is stored locally on your device. If you sign in, a copy is also stored in Firebase Firestore, protected by Google's standard security infrastructure and access rules. Your learning progress is accessible only to your own account. Community profile data (see above) is visible to other signed-in users of the App.</p>
 
   <h2>Notifications</h2>
   <p>The App may send local reminder notifications generated on your device from your own usage data — not from a remote server. Disable them anytime from your device's notification settings.</p>
 
+  <h2>Donations</h2>
+  <p>The App offers an optional way to support its development through UPI (India) or Wise (international). Donations are made outside the App, in your UPI app or in Wise's own page, and are governed by those services' own terms and privacy policies. The App does not receive or store your payment details.</p>
+
   <h2>Third-Party Services</h2>
   <ul>
-    <li>Firebase (Authentication, Firestore, Crashlytics, Analytics, App Check, Storage) — Google LLC</li>
+    <li>Firebase (Authentication, Firestore, Crashlytics, Analytics, App Check, Remote Config) — Google LLC</li>
     <li>Google Sign-In — Google LLC</li>
+    <li>Wise (optional, for international donations) — Wise Payments Limited</li>
   </ul>
 
   <h2>Your Choices</h2>
   <ul>
-    <li>You can use most App features without signing in — your data then stays only on your device.</li>
+    <li>You can use most App features without signing in — your data then stays only on your device. Cloud sync and the Community features need an account.</li>
     <li>You can delete your account and cloud data anytime from the Profile screen, or via our <a href="delete-account.html">Account Deletion page</a>.</li>
+    <li>You can control who sees you on the leaderboard from the Community settings.</li>
   </ul>
 
   <h2>Children's Privacy</h2>
